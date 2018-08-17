@@ -32,4 +32,6 @@ angular.module('udaciMealsApp')
       }
     ]
 
+    this.nick = true;
+
   });
