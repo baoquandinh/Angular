@@ -5,6 +5,8 @@
       <h4>{{item.name}}</h4>
       <p>Rating: {{item.rating}}
         <span ng-if="item.rating > 4.0" ng-class="{highlight: item.rating > 4.5, bold: item.rating > 4.0}"> - People love this item!</span>
+        <button ng-click="menu.increment(item)">+</button>
+        <button ng-click="menu.decrement(item)">-</button>
       </p>
     </div>
   </div>

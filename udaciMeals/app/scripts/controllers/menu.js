@@ -32,6 +32,12 @@ angular.module('udaciMealsApp')
       }
     ]
 
-    this.nick = true;
+    this.increment = function(item) {
+      item.rating = ((item.rating * 10) + 1) / 10;
+    };
+
+    this.decrement = function(item) {
+      item.rating = ((item.rating * 10) - 1) / 10;
+    };
 
   });
