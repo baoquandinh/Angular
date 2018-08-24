@@ -1,10 +1,11 @@
 <h1 id="storeHeading">{{store.name}}</h1>
 <p id="brickColors">We currently have {{store.brickColors.length}} color choices!</p>
 <ul id="colorList">
-  <li id="color-{{color}}" ng-repeat="color in store.brickColors" ng-if="color">
-    <p ng-repeat="size in store.bricks">
-      {{color}} 
-      {{size}}
-    </p>
+  <li id="color-{{color}}" ng-repeat="color in store.brickColors">
+    <!-- <h1 ng-if="">{{color}}</h1> -->
+    <h1 id="{{store.bricks[color]}}">{{store.bricks[color]}}</h1>
+    <!-- <p>{{store.bricks[color]}}</p> -->
   </li>
 </ul>
+
+
